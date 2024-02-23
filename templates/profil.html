@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if 'userID' in session %}
+    <h2>Hello {{session['userID']}}</h2>
+    {% else %}
+    <h2>Nothing to see here. </h2>
+    {% endif %}
+</body>
+</html>

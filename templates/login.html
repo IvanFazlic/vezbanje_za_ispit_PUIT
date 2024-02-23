@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <input type="text" name="username"><br>
+    <input type="password" name="password"><br>
+    <button type="submit">Predaj</button>
+    {% if unsuccess %}
+    <h4>Bad login attampt</h4>
+    {% endif %}
+</form>
+</body>
+</html>
